@@ -2,6 +2,7 @@ package main
 
 import (
 	"chip8/cpu"
+	"os"
 
 	sdl "github.com/veandco/go-sdl2/sdl"
 )
@@ -12,7 +13,7 @@ const FPS uint32 = 500
 
 func main() {
 
-	fileName := "pong.ch8"
+	fileName := "roms/" + string(os.Args[1]) + ".ch8"
 
 	var sizeModifier int32 = 20
 
